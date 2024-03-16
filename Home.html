@@ -1,13 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Google font -->
+
+    <!-- Link Style css -->
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="font-body font-normal">
+    <header class="fixed top-0 left-0 w-full h-[90px] z-10 m-auto shadow-sm bg-gray-50">
+      <div class="container w-full relative flex justify-between items-center h-full px-4 mx-auto">
+        <a href="#">
+          <img src="/assets/images/logo.png" alt="logo" width="80" height="50" loading="lazy" class="h-auto max-w-[120px] w-full" />
+        </a>
+        <nav class="absolute hidden bg-gray-200 md:block md:static md:top-0 md:w-max md:mt-0 left-0 w-full md:bg-transparent md:z-auto top-[90%] transition-all ease-in duration-500" data-navbar>
+          <ul class="h-full px-8 flex flex-col md:flex-row md:px-0 md:items-center md:w-auto">
+            <li class="my-5 md:my-0">
+              <a href="/" class="font-semibold after:">Home</a>
+            </li>
+            <li class="my-5 md:mx-5">
+              <a href="/FAQ.html" target="_blank" class="font-semibold">FAQ</a>
+            </li>
+            <li class="pt-10 pb-6 border-t-[1px] md:pb-0 md:pt-0 md:border-t-0 solid border-gray-700 w-[100px]">
+              <a class="px-5 bg-white py-3 rounded-xl font-semibold shadow-xl" href="/Sign_In.html" target="_blank">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="grid place-items-center h-10 w-10 bg-gray-200 shadow-xl rounded-lg hover:bg-gray-100 md:hidden" onclick="handleToggler()">
+          <span class="material-symbols-rounded" data-toggler-nav> menu </span>
+        </button>
+      </div>
+    </header>
+
+    <main class="mt-32 w-full h-max">
+      <article class="container max-w-[580px] mx-auto">
+        <section class="flex flex-col py-5 px-4 justify-center items-center gap-4">
+          <h1 class="text-7xl text-center py-3 max-w-[500px] font-bold font-primary">Point Of sale yang dapat di andalkan</h1>
+          <p class="max-w-[500px] md:max-w-[1000px] text-xl text-center">
+            <span class="font-extrabold">Odoo POS</span> yang intuitif, bekerja baik online atau offline, serta menawarkan beragam macam opsi untuk memenuhi kebutuhan bisnis anda. Setup dalam hitungan menit, mulai menjual dalam hitungan
+            detik, dan pastikan staf serta klien anda puas!
+          </p>
+          <button class="px-4 py-3 bg-red-950 grid place-items-center text-white w-max rounded-lg font-semibold">Mulai Sekarang Juga - Gratis</button>
+          <span class="font-medium">Bebas, selamanya, tanpa batasan pengguna. <a href="#" class="flex md:inline font-semibold text-teal-800"> Lihat Selengkapnya</a></span>
+        </section>
+      </article>
+    </main>
+    <script src="assets/images/js/layout.js"></script>
+  </body>
 </html>
