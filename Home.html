@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link Icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-    <!-- Google font -->
 
     <!-- Link Style css -->
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="font-body font-normal">
+    <!-- Navbar -->
     <header class="fixed py-2 top-0 left-0 w-full h-[80px] z-10 m-auto shadow-sm bg-gray-50">
       <div class="container w-full relative flex justify-between items-center h-full px-4 mx-auto">
         <a href="#">
@@ -31,12 +28,12 @@
           </ul>
         </nav>
 
-        <button class="grid place-items-center h-10 w-10 bg-gray-200 shadow-xl rounded-lg hover:bg-gray-100 md:hidden" onclick="handleToggler()">
-          <span class="material-symbols-rounded" data-toggler-nav> menu </span>
+        <button class="grid place-items-center h-10 w-10 bg-gray-200 shadow-xl rounded-lg hover:bg-gray-100 md:hidden">
+          <ion-icon name="menu" onclick="handleToggler(this)" class="text-xl"></ion-icon>
         </button>
       </div>
     </header>
-
+    <!-- Main section -->
     <main class="mt-20 md:mt-32">
       <article class="w-full h-max grid gap-20">
         <!-- hero section -->
@@ -74,10 +71,10 @@
               <img src="./assets/images/arrow-2.png" width="50" height="50" alt="arrow" class="hidden md:block w-20" />
               <p>intuitif</p>
             </div>
-            <div class="max-w-[600px] md:max-w-[800px]">
+            <div class="max-w-[500px] md:max-w-[800px] px-4">
               <p class="text-xl text-center font-light">
-                <span class="font-semibold">Interface yang memiliki semuanya:</span> sangat intuitif sehingga siapapun dapat mengusainya dalam hitungan menit, namun di penuhi opsi yang mencengangkan.<br />
-                Tangani tranksaksi apapun dengan mulus dan fokus pada apa yang terpenting pelanggan.
+                <span class="font-semibold">Interface yang memiliki semuanya:</span> sangat intuitif sehingga siapapun dapat mengusainya dalam hitungan menit, namun di penuhi opsi yang mencengangkan. Tangani tranksaksi apapun dengan mulus
+                dan fokus pada apa yang terpenting pelanggan.
               </p>
             </div>
           </div>
@@ -118,6 +115,110 @@
         </section>
       </article>
     </main>
+    <!-- footer -->
+    <footer class="w-full h-full bg-gray-900">
+      <!-- footer atas -->
+      <div class="container max-w-[500px] md:max-w-full px-10 py-10 text-gray-400 mx-auto">
+        <a href="/" class="flex justify-center pb-10">
+          <img src="./assets/images/logo.png" alt="logo" width="80" height="50" class="h-auto max-w-[120px] object-cover w-full" />
+        </a>
+        <div class="w-full flex gap-10 py-8 flex-wrap md:flex-nowrap justify-between md:justify-between items-start">
+          <div class="flex md:flex-col justify-between w-full md:w-max">
+            <div class="pb-4">
+              <span class="text-2xl font-medium text-gray-300 pb-2">Komunitas</span>
+              <ul class="grid gap-2" data-list-footer>
+                <li>
+                  <a href="#">Tutorial-tutorial</a>
+                </li>
+                <li>
+                  <a href="#">Dokumentasi</a>
+                </li>
+                <li>
+                  <a href="#">Forum</a>
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <span class="text-2xl font-medium text-gray-300">Open Source</span>
+              <ul class="grid gap-2" data-list-footer>
+                <li>
+                  <a href="#">Download</a>
+                </li>
+                <li>
+                  <a href="#">Github</a>
+                </li>
+                <li>
+                  <a href="#">Runbot</a>
+                </li>
+                <li>
+                  <a href="#">Terjemahan</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid">
+            <span class="text-2xl font-medium text-gray-300">Layanan</span>
+            <p class="hover:text-gray-200 cursor-pointer">Odoo.sh Hosting</p>
+            <ul class="grid gap-1" data-list-footer>
+              <li class="pt-2">
+                <a href="#">bantuan</a>
+              </li>
+              <li>
+                <a href="#">peningkatan</a>
+              </li>
+              <li>
+                <a href="#">Forum</a>
+              </li>
+              <li>
+                <a href="#">Costum Development</a>
+              </li>
+              <li>
+                <a href="#">Pendidikan</a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid">
+            <span class="text-2xl font-medium text-gray-300">Tentang Kami</span>
+            <ul class="grid gap-2" data-list-footer>
+              <li>
+                <a href="#">Perusahaan kami</a>
+              </li>
+              <li>
+                <a href="#">Aset Merek</a>
+              </li>
+              <li>
+                <a href="#">Hubungi kami</a>
+              </li>
+              <li>
+                <a href="#">Tugas</a>
+              </li>
+              <p>Hukum • Privasi <br />Keamanan</p>
+            </ul>
+          </div>
+          <div class="grid w-full md:max-w-[500px]">
+            <div class="flex gap-2 pb-10 border-b-[1px] w-full border-gray-600">
+              <img src="./assets/images/bendera.png" alt="indonesia" width="20" height="10" class="rounded-full object-cover h-auto" />
+              <span>bahasa Indonesia</span>
+            </div>
+            <p class="pt-8">Odoo adalah rangkaian Aplikasi bisnis open source yang mencakup semua kebutuhan perusahaan Anda : CRM, eCommerce, akutansi, iventaris, point of sale, manajement project, dan seterus.</p>
+            <span class="pt-3">Mudah di gunakan dan terintegrasi penuh pada saat yang sama adalah value proposition unik Odoo.</span>
+            <div class="flex gap-5 text-2xl pt-6 cursor-pointer" data-logo>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer bawah -->
+      <div class="w-full bg-black">
+        <p class="flex justify-center py-5 text-gray-400">Website made with <span class="text-gray-200 px-2"> group 7</span></p>
+      </div>
+    </footer>
+    <!-- link icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
   <script src="assets/js/layout.js"></script>
 </html>
